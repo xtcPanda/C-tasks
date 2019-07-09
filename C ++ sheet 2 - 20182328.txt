@@ -1,0 +1,214 @@
+Sheet 2
+-------------------------------------P.1.1------------------------------------
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int CrH;
+	cout<<"Enter the Credit hours for the Student: ";
+	cin>>CrH;
+	
+	if (CrH >= 0 && CrH < 133)
+	{
+		if (CrH < 30)
+			cout<<"Freshman"<<endl;
+		else if (CrH >= 30 && CrH < 60)
+			cout<<"Sophomore"<<endl;
+		else if (CrH >= 60 && CrH < 90)
+			cout<<"Junior"<<endl;
+		else if (CrH >= 90 && CrH < 120)
+			cout<<"Senior"<<endl;
+		else 
+			cout<<"GraduatingSenior"<<endl;
+	}
+	else
+		cout<<"Error !!\n"<<endl;
+	system("pause");
+	return 0;
+}
+
+-------------------------------------P.1.2------------------------------------
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int CrH;
+	cout<<"Enter the Credit hours for the Student: ";
+	cin>>CrH;
+	
+	if (CrH >= 0 && CrH < 133)
+	{
+		switch(CrH/10)
+		{
+			case 0:
+			case 1:
+			case 2:
+				cout <<"Freshman"<<endl;
+				break;
+			case 3:
+			case 4:
+			case 5:
+				cout <<"Sophomore"<<endl;
+				break;
+			case 6:
+			case 7:
+			case 8:
+				cout<<"Junior"<<endl;
+			case 9:
+			case 10:
+			case 11:
+				cout<<"Senior"<<endl;
+				break;
+			default:
+				cout<<"GraduationSenior\n";
+		}
+	}
+	else
+		cout<<"Error !!\n";
+
+	system("pause");
+	return 0;
+}
+
+--------------------------------------P.2-----------------------------------
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int num,temp,rem,dec = 0,b = 1;
+	cout<<"Enter a Binary number: ";
+	cin>>num;
+	temp = num;
+	while(num > 0)
+	{
+		rem = temp % 10;
+		dec = dec + rem * b;
+		b *= 2;
+		temp /= 10;
+	}
+	cout<<"the decimal number = "<<dec<<endl;
+
+	system("pause");
+	return 0;
+}
+
+OR
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int X,num1,num2,num3,ans;
+	cout<<"Enter a Binary number of 3-digits: ";
+	cin>>X;
+
+	num1 = (X % 10)*1;
+	X /=10;
+	num2 = (X%10)*2;
+	X /=10;
+	num3 = (X%10)*4;
+	ans = num1 + num2 + num3;
+	
+	cout <<"the decimal number = "<<ans<<endl;
+
+	system("pause");
+	return 0;
+}
+
+
+--------------------------------------P.3-----------------------------------
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	char o;
+	cout <<"Enter one of these operators (+ , - , / , *). : ";
+	cin >> o;
+
+	float n1;
+	cout <<"Enter your 1st # : ";
+	cin>>n1;
+
+	float n2;
+	cout<<"Enter your 2nd # : ";
+	cin>>n2;
+
+		if (o == '+')
+			cout<<n1<<" + "<<n2<<" = "<<n1+n2<<endl;
+		else if (o == '-')
+			cout<<n1<<" - "<<n2<<" = "<<n1-n2<<endl;
+		else if (o == '/')
+			cout<<n1<<" / "<<n2<<" = "<<n1/n2<<endl;
+		else if (o == '*')
+			cout<<n1<<" * "<<n2<<" = "<<n1*n2<<endl;
+		else
+			cout<<"ERRRRROOOOORRRR !!!!"<<endl;
+
+	system("pause");
+	return 0;
+}
+--------------------------------------P.4-----------------------------------
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	float s1,s2,s3;
+	cout<<"Enter the student 1 score : ";
+	cin>>s1;
+	cout<<"Enter the student 2 score : ";
+	cin>>s2;
+	cout<<"Enter the student 3 score : ";
+	cin>>s3;
+	
+	if (s1 > s2 && s1 > s3)
+			cout<<"student 1 score is the beggist \n";
+	else if (s2 > s1 && s2 > s3)
+		cout<<"student 2 score is the beggist \n";
+	else cout<<"student 3 score is the beggist \n";
+
+	system ("pause");
+	return 0;
+}
+--------------------------------------P.7-----------------------------------
+
+ if (score_a == score_b) { 
+cout << "Tie" << endl; } 
+--------------------------------------P.8-----------------------------------
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{ 
+	string input; 
+	cout << "Enter Y to quit." << endl; 
+	getline(cin,input);
+
+	if (input == "Y")
+		cout << "Goodbye." << endl; 
+
+	return 0; 
+	}
+--------------------------------------P.11-----------------------------------
+Enter the name : GG
+Enter your password : 1346
+Login successful
+
+OR
+
+Enter the name : GG
+Enter your password : 1234
+Incorrect PASSWORD, Try again .
+
+OR
+
+Enter the name : DA
+Enter your password : 23445
+Incorrect Login Details, Try again .

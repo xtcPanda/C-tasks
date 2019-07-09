@@ -1,0 +1,228 @@
+--------------------------------P.5
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  float  pounds = 1.487, francs = 0.172 , marks = 0.584, yens = 0.00955;
+  float dollars;
+
+  cin >> dollars;
+
+  cout << dollars / pounds << " pounds\n";
+  cout << dollars / francs << " francs\n";
+  cout << dollars / marks << " marks\n";
+  cout << dollars / yens << " yens\n";
+return 0 ;
+}
+--------------------------------P.6
+#include <iostream>
+using namespace std;
+
+int main()
+{
+int n , s=10000 ; 
+cout << "Enter a 5-digit number: ";
+cin >> n;
+if (n>0&&n<=99999)
+{
+for(int i = 1; i <=5;i++)
+{
+cout << n / s<< " ";
+n = n % s;
+s /= 10;
+}
+}
+else 
+cout<<"invalid"<<endl;
+
+return 0 ;
+}
+--------------------------------P.9
+#include <iostream>
+using namespace std;
+
+int main()
+{
+int n , s=100 ; 
+cout << "Enter a 3-digit number: ";
+cin >> n;
+if (n>0&&n<=999)
+{
+
+cout << n / s<< " ";
+int a = n;
+n = n % s;
+s /= 10;
+
+cout << n / s<< " ";
+int b = n;
+n = n % s;
+s /= 10;
+
+cout << n / s<< " ";
+int c = n;
+n = n % s;
+s /= 10;
+      if (a < b && b < c)
+         cout<<" (increasing)"<<endl;
+
+      else if (a > b and b > c)
+              cout<<"decreasing"<<endl;
+
+            else
+                cout<<"neither"<<endl;
+}
+
+
+else 
+cout<<"invalid"<<endl;
+
+return 0 ;
+}
+--------------------------------P.10
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  cout<<"Enter the card notation (Queen of Spades = QS, King of Hearts = KH, 1 of Daimonds = 1D..etc): ";
+  string C;
+  cin>>C;
+  
+  if (C=="AS")
+    cout<<"Ace of Spades";
+    else if (C=="AH")
+           cout<<"Ace of Hearts";
+    else if (C=="AC")
+           cout<<"Ace of Clubs";
+    else if (C=="AD")
+           cout<<"Ace of Daimonds";
+
+
+    else if (C=="KS")
+           cout<<"King of Speads";
+    else if (C=="KH")
+           cout<<"King of Hearts";
+    else if (C=="KC")
+           cout<<"King of Clubs";
+    else if (C=="KD")
+           cout<<"King of Daimonds";
+
+    else if (C=="QS")
+           cout<<"Queen of Speads";
+    else if (C=="QH")
+           cout<<"Queen of Hearts";
+    else if (C=="QC")
+           cout<<"Queen of Clubs";
+    else if (C=="QD")
+           cout<<"Queen of Daimonds";
+      
+    else if (C=="JS")
+           cout<<"Jack of Speads";
+    else if (C=="JH")
+           cout<<"Jack of Hearts";
+    else if (C=="JC")
+           cout<<"Jack of Clubs";
+    else if (C=="JD")
+           cout<<"Jack of Daimonds";
+    
+    else if (C=="1S")
+           cout<<"1 of Speads";
+    else if (C=="1H")
+           cout<<"1 of Hearts";
+    else if (C=="1C")
+           cout<<"1 of Clubs";
+    else if (C=="1D")
+           cout<<"1 of Daimonds";
+     
+    else if (C=="2S")
+           cout<<"2 of Speads";
+    else if (C=="2H")
+           cout<<"2 of Hearts";
+    else if (C=="2C")
+           cout<<"2 of Clubs";
+    else if (C=="2D")
+           cout<<"2 of Daimonds";
+     
+    else if (C=="3S")
+           cout<<"3 of Speads";
+    else if (C=="3H")
+           cout<<"3 of Hearts";
+    else if (C=="3C")
+           cout<<"3 of Clubs";
+    else if (C=="3D")
+           cout<<"3 of Daimonds";
+    
+ 
+    else if (C=="41S")
+           cout<<"4 of Speads";
+    else if (C=="4H")
+           cout<<"4 of Hearts";
+    else if (C=="4C")
+           cout<<"4 of Clubs";
+    else if (C=="4D")
+           cout<<"4 of Daimonds";
+    
+ 
+    else if (C=="5S")
+           cout<<"5 of Speads";
+    else if (C=="5H")
+           cout<<"5 of Hearts";
+    else if (C=="5C")
+           cout<<"5 of Clubs";
+    else if (C=="5D")
+           cout<<"5 of Daimonds";
+     
+    else if (C=="5S")
+           cout<<"5 of Speads";
+    else if (C=="5H")
+           cout<<"5 of Hearts";
+    else if (C=="5C")
+           cout<<"5 of Clubs";
+    else if (C=="5D")
+           cout<<"5 of Daimonds";
+     
+    else if (C=="6S")
+           cout<<"6 of Speads";
+    else if (C=="6H")
+           cout<<"6 of Hearts";
+    else if (C=="6C")
+           cout<<"6 of Clubs";
+    else if (C=="6D")
+           cout<<"6 of Daimonds";
+    
+    else if (C=="7S")
+           cout<<"7 of Speads";
+    else if (C=="7H")
+           cout<<"7 of Hearts";
+    else if (C=="7C")
+           cout<<"7 of Clubs";
+    else if (C=="7D")
+           cout<<"7 of Daimonds";
+    
+    else if (C=="8S")
+           cout<<"8 of Speads";
+    else if (C=="8H")
+           cout<<"8 of Hearts";
+    else if (C=="8C")
+           cout<<"8 of Clubs";
+    else if (C=="8D")
+           cout<<"8 of Daimonds";
+    
+    else if (C=="9S")
+           cout<<"9 of Speads";
+    else if (C=="9H")
+           cout<<"9 of Hearts";
+    else if (C=="9C")
+           cout<<"9 of Clubs";
+    else if (C=="9D")
+           cout<<"9 of Daimonds";
+    
+
+  else 
+    cout << "ERROR 404!!"<<endl;
+  
+return 0 ;
+}
+--------------------------------ENDED!
