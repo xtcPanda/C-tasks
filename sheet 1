@@ -1,0 +1,334 @@
+-------------------------------------------------------P.1------------------------------------------------------
+#include <iostream>
+
+#include <string>
+
+using namespace std;
+
+
+int main()
+
+{
+    
+ cout<<"Enter your name : ";
+  string name;
+ 
+ getline(cin,name);
+  
+ cout<<"Enter your age : ";
+ 
+ float age;
+  cin>>age;
+ 
+ cout<<name<<" welcome to Future University in Egypt you are "<<age<<" yers old"<<endl;
+
+    return 0;
+
+}
+
+---------------------------------------------------------P.2----------------------------------------------------
+#include <iostream>
+
+using namespace std;
+
+
+int main()
+
+{
+    
+	cout<<"This is \na C++ program"<<endl;
+
+    
+
+return 0;
+
+}
+----------------------------------------------------------P.3-----------------------------------------------------
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	char firstName;
+	cout<<"Enter you First name (first letter only): ";
+	cin>>firstName;
+
+return 0;
+}
+---------------------------------------------------------P.4---------------------------------------------------------
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	char firstName;
+	cout<<"Enter you First name (first letter only): ";
+	cin>>firstName;
+	char lastName;
+	cout<<"Enter you Last name (first letter only): ";
+	cin>>lastName;
+
+
+return 0;
+}
+---------------------------------------------------------P.5---------------------------------------------------------
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int X = 5,Y = 0,Z = 1;
+	cout<<"X = \n"<<X<<"Y = \n"<<Y<<"Z = "<<Z<<endl;
+
+return 0;
+}
+--------------------------------------------------------P.6----------------------------------------------------------
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int studentID1 = 20182328;
+	int studentID2 = 20181038;
+	int age1 = 20;
+	int age2 = 20;
+
+return 0;
+}
+-------------------------------------------------------P.7-----------------------------------------------------------
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int studentID1 = 20182328;
+	int studentID2 = 20181038;
+	int age1 = 20;
+	int age2 = 20;
+
+	cout<<" Student 1 (ID,AGE) : "<<studentID1<<" , "<<age1<<endl;
+ 	cout<<" Student 2 (ID,AGE) : "<<studentID2<<" , "<<age2<<endl;
+return 0;
+}
+------------------------------------------------------P.8------------------------------------------------------------------
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int studentID = 20181234;
+	int age = 20;
+
+	cout<<studentID<<" Welcome to Future University in Egypt you are "<<age<<" years old"<<endl;
+return 0;
+}
+------------------------------------------------------P.9-------------------------------------------------------------------
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int x = 10, y = 22;
+	cout<<x+y<<endl;
+return 0;
+}
+----------------------------------------------------P.10------------------------------------------------------------------------
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int x = 10, y = 22;
+	cout<<"sum is "<<x+y<<endl;
+	cout<<"defference is "<<y-x<<endl;
+	cout<<"Product is "<<x * y<<endl;
+	cout<<"Moddules is"<<y % x<<endl;
+
+return 0;
+}
+----------------------------------------------------P.11---------------------------------------------------------------------------
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+	float length;
+	cout<<"Enter the Length : ";
+	cin>> length;
+	float perimeter = length * 4;
+	float area = pow(length,2);
+	cout<<"the Perimeter of the square is "<<perimeter<<" and the area is "<<area<<endl;
+
+return 0;
+}
+-------------------------------------------------P.12------------------------------------------------------------------
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+	float diameter;
+	cout<<"Enter the Diameter : ";
+	cin>> diameter;
+	float r = diameter / 2;
+	float pi = 3.14;
+	float area = pi * pow(r,2);
+	cout<<"The area of the circle is "<<endl;
+
+return 0;
+}
+-------------------------------------------------P.13----------------------------------------------------------------------
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	cout<<"this program will do : \nAdd the first number to the second number and result to second number\nIncrement the second number by 1\nIncrement third number by 3\nDecrement fourth number by 1\nMultiply third number by 6\nDivide fourth number over third number"<<endl;
+	float w,x,y,z;
+	cout<<"Enter #1 : ";
+	cin>>w;
+	cout<<"Enter #2 : ";
+	cin>>x;
+	cout<<"Enter #3 : ";
+	cin>>y;
+	cout<<"Enter #4 : ";
+	cin>>z;
+
+	x = w + x;
+	x++;
+	y = y + 3;
+	z--;
+	y = y * 6;
+	z = z / y;
+	
+	cout<<"the numbers after the Process will be "<<w<<" , "<<x<<" ,"<<y<<" ,"<<y<<" ,"<<z<<endl;
+	
+
+return 0;
+}
+-----------------------------------------------P.14-------------------------------------------------------------------------
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+	cout<<" This program calculate the value of X = A^2 + B - 2"<<endl;
+	int A, B;
+	cout<<"Enter the value of A :";
+	cin>>A;
+	cout<<"Enter the value of B :";
+	cin>>B;
+	int X = pow(A,2) + B - 2;
+	cout<<"The value of X is "<<X<<endl;
+
+return 0;
+}
+-----------------------------------------------P.15-------------------------------------------------------------------------
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+	cout<<"Enter the radius of a circle : ";
+	float r;
+	cin>>r;
+	float d = r * 2;
+	float pi = 3.14;
+	float c = 2 * pi * r;
+	float a = pi * pow(r,2);
+	cout<<"The diameter = "<<d<<", the circumference = "<<c<<" & the area = "<<a<<endl;
+	
+return 0;
+}
+-----------------------------------------------P.16-------------------------------------------------------------------------
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+	cout<<"prints the area and perimeter the rectangle\n";
+
+	float L,W;
+	cout<<"Enter the length : ";
+	cin>>L;
+	cout<<"Enter the Width : ";
+	cin>>W;
+	float P = 2 * (L+W), A = L * W;
+	cout<<"Perimeter = "<<P<<endl<<"Area = "<<endl;
+return 0;
+}
+-----------------------------------------------P.17-------------------------------------------------------------------------
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+	cout<<"computes the area of a triangle"<<endl;
+	float b,h;
+	cout<<"Enter the base value: ";
+	cin>>b;
+	cout<<"enter the hight value: ";
+	cin>>h;
+	float A = 0.5 * b * h;
+	cout<< " the area = "<<A<<endl;
+return 0;
+}
+-----------------------------------------------P.18-------------------------------------------------------------------------
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+	cout<<"convert temperature in degrees Fahrenheit to degrees Celsius\n";
+	cout<<"Enter the temperature : ";
+	float TinF;
+	cin>>TinF;
+	float TinC = (5/9) * (TinF - 32);
+	cout<<"celsius = "<<TinC<<endl;
+	
+return 0;
+}
+-----------------------------------------------P.19-------------------------------------------------------------------------
+#include <iostream>
+
+using namespace std;
+
+
+int main()
+
+{
+
+    int x;
+
+    cout<<"Enter a 5-digit number : ";
+
+    cin>>x;
+
+    cout << x / 10000 << " ";
+    
+    x = x % 10000;
+
+    cout << x / 1000 << " ";
+
+    x = x % 1000;
+
+    cout << x / 100 << " ";
+
+    x = x % 100;
+
+    cout << x / 10 << " ";
+    
+    x = x % 10;
+    
+    cout << x << endl;
+
+return 0;
+
+}
